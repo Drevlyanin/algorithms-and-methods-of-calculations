@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+     float mas1[4], S1=0, D1=1, SA1;
+    int i;
+
+
+    for(i = 0; i <= 3; i++)
+    {
+        cin >> mas1[i];
+        S1 += mas1[i];
+        D1 *= mas1[i];
+    }
+
+    SA1 = S1 / 4;
+
+    cout << "S1=" << S1 << " SA1=" << SA1 << " D1=" << D1 << endl;
+
+    return 0;
+}
