@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float A[2][3], X[3], b;
+    int i, j;
+
+    for(j = 0; j < 3; j++) 
+        cin >> X[j];
+    cout << "b=";
+    cin >> b;
+
+
+    for(i = 0; i < 2; i++) {
+        for(j = 0; j < 3; j++) {
+            cin >> A[i][j];
+            if(A[i][j] * X[j] == b)
+                cout << "Yes ";
+            else
+                cout << "No ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
