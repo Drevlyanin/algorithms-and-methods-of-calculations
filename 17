@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float A[10][15], X, D = 1;
+    int i, j;
+    cin >> X;
+
+    for(i = 0; i < 10; i++) {
+        for(j = 0; j < 15; j++) {
+            A[i][j] = i * (i * X + j * X);
+            if (i * j < X && i * j != 0) {
+                D = D * A[i][j];
+            }
+            cout << "A[" << i << "][" << j << "] = " << A[i][j] << " D = " << D << endl;
+        }
+    }
+
+    return 0;
+}
