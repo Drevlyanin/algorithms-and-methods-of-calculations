@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float A[10][10], S = 0;
+    int i, j;
+
+    for(i = 0; i < 10; i++) {
+        for(j = 0; j < 10; j++) {
+            A[i][j] = j * (i * i + 10);
+            if ((i + j) % 2 != 0) {
+                S = S + A[i][j];
+            }
+            cout << "A[" << i << "][" << j << "] = " << A[i][j] << " S = " << S << endl;
+        }
+    }
+
+    return 0;
+}
