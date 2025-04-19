@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A[3][2], i, j, b, D = 1;
+    cout<<"b=";
+    cin>>b;
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 2; j++) {
+            cin >> A[i][j];
+            if(A[i][j] > b) {
+                D = D * A[i][j];
+            }
+        }
+    }
+    
+    cout << "D=" << D;
+    
+    return 0;
+}
